@@ -62,6 +62,9 @@ def count_words(filepath: str) -> WordCountResults:
         :10
     ]
 
+    if total_words == 0:
+        raise ValueError("The file is empty")
+
     return WordCountResults(
         filepath=filepath,
         total_words=total_words,
