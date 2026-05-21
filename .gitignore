@@ -13,10 +13,15 @@ __pycache__/
 dist/
 
 # Data and models
-*.csv
 *.pkl
 *.bin
 data/
+*.csv
+
+# Test fixtures - keep these
+!tests/data/
+!tests/data/*.csv
+!tests/data/*.txt
 
 # VS Code
 .vscode/
